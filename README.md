@@ -26,7 +26,8 @@ for EXPERT in noisy_good perfect_good perfect_bad random strong_bad_bias strong_
     python experiments/toy1/01_train_models.py $EXPERT -s $SEED -g $GPU
     python experiments/toy1/02_eval_models.py $EXPERT -s $SEED -g $GPU
   done
-  python experiments/toy1/03_plots.py $EXPERT
+  (Optional) python experiments/toy1/03_kallus_et_al.py $EXPERT 
+  python experiments/toy1/04_plots.py $EXPERT (Optional) --kallus=True
 done
 ```
 
